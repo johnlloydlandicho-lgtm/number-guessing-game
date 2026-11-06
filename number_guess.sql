@@ -131,6 +131,13 @@ ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.u
 --
 
 INSERT INTO public.games VALUES (1, 1, 12);
+INSERT INTO public.games VALUES (2, 2, 559);
+INSERT INTO public.games VALUES (3, 2, 878);
+INSERT INTO public.games VALUES (4, 3, 148);
+INSERT INTO public.games VALUES (5, 3, 206);
+INSERT INTO public.games VALUES (6, 2, 587);
+INSERT INTO public.games VALUES (7, 2, 157);
+INSERT INTO public.games VALUES (8, 2, 996);
 
 
 --
@@ -138,20 +145,22 @@ INSERT INTO public.games VALUES (1, 1, 12);
 --
 
 INSERT INTO public.users VALUES (1, 'Fabio');
+INSERT INTO public.users VALUES (2, 'user_1793966031183');
+INSERT INTO public.users VALUES (3, 'user_1793966031182');
 
 
 --
 -- Name: games_game_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.games_game_id_seq', 1, true);
+SELECT pg_catalog.setval('public.games_game_id_seq', 8, true);
 
 
 --
 -- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.users_user_id_seq', 1, true);
+SELECT pg_catalog.setval('public.users_user_id_seq', 3, true);
 
 
 --
